@@ -9,9 +9,9 @@ function App() {
     const routeList = pageList.map(page => {
         return page.route()
     })
-    
+
     return (
-        <div className="App">
+        <div className="">
             <HashRouter>
                 <TopBar/>
                 <Routes>

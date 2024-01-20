@@ -1,0 +1,46 @@
+.margins {
+    &-mobile {
+        margin: 0rem 2rem 0rem 2rem;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    @extend .flex;
+    align-items: center;
+}
+.align-end {
+    @extend .flex;
+    align-items: end;
+}
+.align-start {
+    @extend .flex;
+    align-items: start;
+}
+.justify-center {
+    @extend .flex;
+    justify-content: center;
+}
+.justify-right {
+    @extend .flex;
+    justify-content: right;
+}
+.justify-left {
+    @extend .flex;
+    justify-content: left;
+}
+.justify-around {
+    @extend .flex;
+    justify-content: space-around;
+}
+.justify-between {
+    @extend .flex;
+    justify-content: space-between;
+}
+.column {
+    @extend .flex;
+    flex-direction: column;
+}
