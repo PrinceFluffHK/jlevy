@@ -6,18 +6,20 @@ import TopBar from "./components/TopBar";
 import { pageList } from "./data/links";
 
 function App() {
-    const routeList = pageList.map(page => {
-        return page.route()
-    })
+    const routeList = pageList.map((page) => {
+        return page.route();
+    });
 
     return (
-        <div className="">
+        <div className="" style={{ backgroundColor: "gray" }}>
             <HashRouter>
-                <TopBar/>
-                <Routes>
-                    <Route exact path="/" Component={Homepage} />
-                    {routeList}
-                </Routes>
+                <TopBar />
+                <div style={{overflow: "scroll"}}>
+                    <Routes>
+                        <Route exact path="/" Component={Homepage} />
+                        {routeList}
+                    </Routes>
+                </div>
             </HashRouter>
         </div>
     );
