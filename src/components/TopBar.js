@@ -57,7 +57,6 @@ const TopBar = (props) => {
     };
 
     return (
-        // <div className="top-bar-container">
         <div className="" style={{ position: "relative" }}>
             <img
                 className="banner-bg"

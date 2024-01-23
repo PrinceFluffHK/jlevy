@@ -4,6 +4,7 @@ import { Grid } from "@mui/material";
 import { displayList } from "../data/links";
 
 const Homepage = (props) => {
+    console.log(displayList)
     const pageGrid = displayList.map((link) => {
         return link.gridDisplay();
     });

@@ -34,7 +34,7 @@ class Page {
             <Grid item xs={6} md={3}>
                 <div className="flex center">
                     <Link to={this.link} key={this.name}>
-                        <img src={this.picture} className="top-bar-container grid-image">
+                        <img src={this.picture} className="top-bar-container grid-image" alt="wahoo">
 
                         </img>
                     </Link>
