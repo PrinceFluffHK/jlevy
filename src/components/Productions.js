@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Productions = (props) => {
+const MyProductions = (props) => {
     return (
         <div>
-            Hello from Productions
+            Hello from MyProductions
         </div>
     )
 }
 
-export default Productions
+export default MyProductions

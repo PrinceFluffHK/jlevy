@@ -9,13 +9,13 @@ import Homepage from "../components/Homepage";
 import Films from "../components/Films";
 import Screenplays from "../components/Screenplays";
 import Contact from "../components/Contact";
-import Productions from "../components/Productions";
+import MyProductions from "../components/Productions";
 
-export const homePage = new Page("Home", "/", "", Homepage)
+// export const homePage = new Page("Home", "/", "", Homepage)
 export const contactPage = new Page("Contact", "/contact", "", Contact)
 export const filmsPage = new Page("Short Films", "/films", cameraLens, Films)
 export const artPage = new Page("Art", "/art", pencilTip, Art)
-export const productionPage = new Page("Productions", "/productions", portfolio, Productions)
+export const productionPage = new Page("Productions", "/productions", portfolio, MyProductions)
 export const screenplayPage = new Page("Screenplays", "/screenplay", screenplay, Screenplays)
 
 export const pageList = [

@@ -31,7 +31,7 @@ class Page {
 
     gridDisplay() {
         return(
-            <Grid item xs={6} md={3}>
+            <Grid item xs={6} md={3} key={this.name}>
                 <div className="flex center">
                     <Link to={this.link} key={this.name}>
                         <img src={this.picture} className="top-bar-container grid-image" alt="wahoo">

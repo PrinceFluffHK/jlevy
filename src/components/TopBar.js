@@ -44,13 +44,13 @@ const TopBar = (props) => {
     };
 
     const linkList = pageList.map((page) => {
-        return <div onClick={handleMenu}>{page.menuLink()}</div>;
+        return <div onClick={handleMenu} key={page.name}>{page.menuLink()}</div>;
     });
 
     const NavMenu = () => {
         if (menuOpen) {
             return (
-                <div className="links-container">{linkList}</div>
+                <div className="links-container" key={1}>{linkList}</div>
             );
         }
         return <></>;
