@@ -27,8 +27,8 @@ export const pageList = [
 ]
 
 export const displayList = [
-    filmsPage,
-    artPage,
-    productionPage,
     screenplayPage,
+    filmsPage,
+    productionPage,
+    artPage,
 ]

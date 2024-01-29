@@ -1,10 +1,10 @@
 import React from "react";
-import headshot from "../images/pic1.png";
+import headshot from "../images/HS_JacobLevy_2.jpg";
 import { Grid } from "@mui/material";
 import { displayList } from "../data/links";
 
 const Homepage = (props) => {
-    console.log(displayList)
+    // console.log(displayList)
     const pageGrid = displayList.map((link) => {
         return link.gridDisplay();
     });

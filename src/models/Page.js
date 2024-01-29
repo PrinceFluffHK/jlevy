@@ -30,17 +30,24 @@ class Page {
     }
 
     gridDisplay() {
-        return(
+        return (
             <Grid item xs={6} md={3} key={this.name}>
                 <div className="flex center">
                     <Link to={this.link} key={this.name}>
-                        <img src={this.picture} className="top-bar-container grid-image" alt="wahoo">
-
-                        </img>
+                        <div className="pos-relative">
+                            <img
+                                src={this.picture}
+                                className="top-bar-container grid-image pos-absolute"
+                                alt="wahoo"
+                            />
+                            <div className="grid-overlay-shadow">
+                                <p className="grid-overlay-text">{this.name}</p>
+                            </div>
+                        </div>
                     </Link>
                 </div>
             </Grid>
-        )
+        );
     }
 }
 
