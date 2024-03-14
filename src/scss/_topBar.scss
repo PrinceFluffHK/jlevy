@@ -1,41 +1,65 @@
-.links-container{
+.banner-container {
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    // background-color: navy;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
+.navbar-padding {
+    padding-top: 100px;
+}
+
+.links-container {
     // height: 10rem;
     width: 100%;
     padding: 1rem 2rem 1rem 2rem;
-    position: absolute;
+    margin-top: 100px;
+    position: fixed;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 100;
+    border-bottom: 4px solid black;
 }
 
-.banner-bg{
+.banner-bg {
     width: 100%;
-    height: auto;
+    height: 106px;
 }
 
-.banner-text{
-    width: 60%;
-    height: auto;
-    &-container{
+.banner-text {
+    width: auto;
+    height: 75px;
+    &-container {
         top: 17%;
         left: 2%;
         position: absolute;
     }
 }
 
-.top-bar-container{
+.top-bar-container {
     position: relative;
 }
 
-.menu-icon{
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    font-size: 5vw;
+.menu-icon {
+    // position: absolute;
+    // top: 30%;
+    // right: 10%;
+    margin-right: 2rem;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.link-text{
+.link-text {
     text-decoration: none;
     font-weight: bold;
     color: #133263;

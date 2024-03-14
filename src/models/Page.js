@@ -31,21 +31,20 @@ class Page {
 
     gridDisplay() {
         return (
-            <Grid item xs={6} md={3} key={this.name}>
-                <div className="flex center">
-                    <Link to={this.link} key={this.name}>
-                        <div className="pos-relative">
-                            <img
-                                src={this.picture}
-                                className="top-bar-container grid-image pos-absolute"
-                                alt="wahoo"
-                            />
-                            <div className="grid-overlay-shadow">
-                                <p className="grid-overlay-text">{this.name}</p>
-                            </div>
+            <Grid item xs={12} sm={6} xl={3} key={this.name} className="center">
+                <Link to={this.link} key={this.name}>
+                    {/* <div className="pos-relative grid-image-container"> */}
+                    <div className="pos-relative">
+                        <img
+                            src={this.picture}
+                            className="top-bar-container pos-absolute grid-image"
+                            alt="wahoo"
+                        />
+                        <div className="grid-overlay-shadow">
+                            <h2 className="grid-overlay-text">{this.name}</h2>
                         </div>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </Grid>
         );
     }

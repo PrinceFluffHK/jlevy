@@ -3,6 +3,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import TopBar from "./components/TopBar";
 import { pageList } from "./data/links";
+import Footer from "./components/Footer";
 
 function App() {
     const routeList = pageList.map((page) => {
@@ -10,15 +11,16 @@ function App() {
     });
 
     return (
-        <div className="" style={{ backgroundColor: "gray" }}>
+        <div className="" style={{ backgroundColor: "lightcyan" }}>
             <HashRouter>
                 <TopBar/>
-                <div style={{overflow: "scroll"}}>
+                <div className="navbar-padding">
                     <Routes>
                         <Route exact path="/" Component={Homepage} />
                         {routeList}
                     </Routes>
                 </div>
+                <Footer />
             </HashRouter>
         </div>
     );
