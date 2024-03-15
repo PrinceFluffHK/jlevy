@@ -2,7 +2,7 @@ import React from 'react';
 import * as productions from "../data/productions.js"
 const { uncontacted, gotFinalSeason, trekCentral } = productions
 
-const MyProductions = (props) => {
+const MyProductions = () => {
     const productionList = [
         uncontacted,
         gotFinalSeason,
@@ -10,18 +10,14 @@ const MyProductions = (props) => {
     ]
 
     const productionPanes = productionList.map((production, index) => {
-        if (index % 2) {
-            return production.listPane("lightcyan")
-        }
-        return production.listPane("white")
-
+        return production.listPane()
     })
 
     return (
-        <div>
-            {productionPanes}
+        <div className="ninety-container top-bar-margin">
+            <div className="narrow-container feature-block">{productionPanes}</div>;
         </div>
-    )
+    );
 }
 
 export default MyProductions

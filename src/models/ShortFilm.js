@@ -10,12 +10,11 @@ class ShortFilm {
         this.id = id;
     }
 
-    listPane(color) {
+    listPane() {
         return (
             <div
-                className="feature-container"
+                className="feature-container block-outline"
                 key={this.name}
-                style={{ backgroundColor: color }}
             >
                 <div className="youtube-embed">
                     <LiteYouTubeEmbed id={this.id} title={this.title} />

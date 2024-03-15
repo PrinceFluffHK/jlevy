@@ -1,3 +1,13 @@
+@import "./variables";
+
+.app-background {
+    background-color: $color-1;
+}
+
+.suppress-link {
+    text-decoration: none;
+    color: black;
+}
 
 .flex {
     display: flex;
@@ -6,7 +16,7 @@
 .center {
     @extend .flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 .align-center {
     @extend .flex;
@@ -45,14 +55,20 @@
     flex-direction: column;
 }
 
-.content-container{
+.content-container {
     margin: 0rem 5rem 0rem 5rem;
     display: flex;
     justify-content: center;
     @media screen and (max-width: 720px) {
         margin: 0rem 2rem 0rem 2rem;
-
     }
+}
+
+.width-90 {
+    width: 90%;
+}
+.width-100 {
+    width: 100%;
 }
 
 .pos-absolute {
@@ -60,4 +76,94 @@
 }
 .pos-relative {
     position: relative;
+}
+
+.ninety-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.drop-shadow {
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.block-outline {
+    @extend .drop-shadow;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+.narrow-container {
+    @extend .block-outline;
+    background-color: $color-2;
+    width: $sm;
+    padding: 1rem 0 1rem 0;
+    @media only screen and (max-width: $sm) {
+        padding: 0 0 0 0;
+        width: 90%;
+    }
+}
+
+.wide-container {
+    @extend .block-outline;
+    background-color: $color-2;
+    width: $lg;
+    padding: 1rem 0 1rem 0;
+    @media only screen and (max-width: $lg) {
+        padding: 0 0 0 0;
+        width: 90%;
+    }
+}
+
+.invis {
+    display: none;
+    &-xs {
+        @media only screen and (max-width: $sm) {
+            display: none;
+        }
+    }
+    &-sm {
+        @media only screen and (max-width: $md) {
+            display: none;
+        }
+    }
+    &-md {
+        @media only screen and (max-width: $lg) {
+            display: none;
+        }
+    }
+    &-lg {
+        @media only screen and (max-width: $xl) {
+            display: none;
+        }
+    }
+}
+
+.vis {
+    &-xs {
+        display: none;
+        @media only screen and (max-width: $sm) {
+            display: contents;
+        }
+    }
+    &-sm {
+        display: none;
+        @media only screen and (max-width: $md) {
+            display: contents;
+        }
+    }
+    &-md {
+        display: none;
+        @media only screen and (max-width: $lg) {
+            display: contents;
+        }
+    }
+    &-lg {
+        display: none;
+        @media only screen and (max-width: $xl) {
+            display: contents;
+        }
+    }
 }

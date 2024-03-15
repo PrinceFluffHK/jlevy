@@ -9,9 +9,9 @@ class ArtPiece {
 
     displayPane(index) {
         return (
-            <Grid item xs={12} md={6} lg={3} key={index}>
-                <div className="center">
-                    <img className="art" src={this.image} alt={this.alt} />
+            <Grid item xs={12} md={6} lg={4} key={index}>
+                <div className="center ">
+                    <img className="art block-outline" src={this.image} alt={this.alt} />
                 </div>
             </Grid>
         );

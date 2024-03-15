@@ -29,13 +29,14 @@ const Screenplays = (props) => {
     ];
 
     const featurePanes = featureList.map((feature, index) => {
-        if (index % 2) {
-            return feature.listPane("white");
-        }
-        return feature.listPane("lightcyan");
+        return feature.listPane();
     });
 
-    return <div>{featurePanes}</div>;
+    return (
+        <div className="ninety-container top-bar-margin">
+            <div className="narrow-container feature-block">{featurePanes}</div>;
+        </div>
+    );
 };
 
 export default Screenplays;

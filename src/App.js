@@ -11,10 +11,10 @@ function App() {
     });
 
     return (
-        <div className="" style={{ backgroundColor: "lightcyan" }}>
+        <div className="app-background">
             <HashRouter>
                 <TopBar/>
-                <div className="navbar-padding">
+                <div className="">
                     <Routes>
                         <Route exact path="/" Component={Homepage} />
                         {routeList}

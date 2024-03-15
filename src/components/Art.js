@@ -19,14 +19,12 @@ const Art = (props) => {
         return art.displayPane(index);
     });
     return (
-        <div>
-            <div className="center">
-                <h1>Art</h1>
+        <div className="top-bar-margin ninety-container">
+            <div className="wide-container feature-block">
+                <Grid container spacing={3}>
+                    {artPanes}
+                </Grid>
             </div>
-
-            <Grid container spacing={3}>
-                {artPanes}
-            </Grid>
         </div>
     );
 };

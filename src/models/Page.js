@@ -31,10 +31,9 @@ class Page {
 
     gridDisplay() {
         return (
-            <Grid item xs={12} sm={6} xl={3} key={this.name} className="center">
+            <Grid item xs={12} sm={6} md={3} key={this.name} className="center">
                 <Link to={this.link} key={this.name}>
-                    {/* <div className="pos-relative grid-image-container"> */}
-                    <div className="pos-relative">
+                    <div className="pos-relative drop-shadow">
                         <img
                             src={this.picture}
                             className="top-bar-container pos-absolute grid-image"

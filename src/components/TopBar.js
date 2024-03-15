@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { pageList } from "../data/links.js";
-// import bannerBg from "../images/JLevy Banner BG.png";
 import bannerText from "../images/Jlevy Banner Text.webp";
 
 const TopBar = (props) => {
@@ -26,7 +25,7 @@ const TopBar = (props) => {
                 <div onClick={handleMenu} className="menu-icon">
                     <FontAwesomeIcon
                         icon={faX}
-                        style={{ color: "white" }}
+                        style={{ color: "black" }}
                         size="2xl"
                     />
                 </div>
@@ -36,7 +35,7 @@ const TopBar = (props) => {
             <div onClick={handleMenu} className="menu-icon">
                 <FontAwesomeIcon
                     icon={faBars}
-                    style={{ color: "white" }}
+                    style={{ color: "black" }}
                     size="2xl"
                 />
             </div>
@@ -45,7 +44,11 @@ const TopBar = (props) => {
 
     const linkList = pageList.map((page) => {
         return (
-            <div onClick={handleMenu} key={page.name}>
+            <div
+                style={{ marginRight: "1rem" }}
+                onClick={closeMenu}
+                key={page.name}
+            >
                 {page.menuLink()}
             </div>
         );
@@ -54,8 +57,8 @@ const TopBar = (props) => {
     const NavMenu = () => {
         if (menuOpen) {
             return (
-                <div className="links-container">
-                    {linkList}
+                <div className="links-container center">
+                    <div className="width-90">{linkList}</div>
                 </div>
             );
         }
@@ -74,7 +77,12 @@ const TopBar = (props) => {
                         />
                     </Link>
                 </div>
-                <NavMenuIcon />
+                <div className="invis-sm">
+                    <div className="top-bar-right ">{linkList}</div>
+                </div>
+                <div className="vis-sm">
+                    <NavMenuIcon />
+                </div>
             </div>
             <NavMenu />
         </div>
