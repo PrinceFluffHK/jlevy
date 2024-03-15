@@ -1,0 +1,86 @@
+@import "./variables";
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0px 2%;
+    border: 3px solid black;
+    border-radius: 1.5rem;
+    filter: drop-shadow(1rem 1rem 1rem);
+}
+
+.grid-image {
+    $dimension: 200px;
+    border-radius: 1.5rem;
+    height: $dimension;
+    width: $dimension;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+.grid-image-container {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+}
+
+.grid-overlay-shadow {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background-color: black;
+    opacity: 50%;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.grid-overlay-text {
+    color: white;
+    opacity: 100%;
+}
+
+.homepage-grid-container {
+    margin-bottom: 2rem;
+    background-color: $color-2;
+    border: 3px solid black;
+    border-radius: 1.5rem;
+    filter: drop-shadow(1rem 1rem 1rem);
+    @media only screen and (max-width: $xl) {
+        $dimension: 700px;
+        width: $dimension;
+        height: $dimension;
+    }
+    @media only screen and (max-width: $md) {
+        width: 90%;
+        height: fit-content;
+    }
+}
+
+#bioAndLinks p {
+    font-size: 20px;
+}
+
+.bio-container {
+    height: 100%;
+    background-color: $color-2;
+    border-radius: 1rem;
+    border: 3px solid black;
+    filter: drop-shadow(1rem 1rem 1rem);
+    padding: 2rem 0 2rem 0;
+}
+
+.first-block-container {
+    width: 90%;
+}
+
+.contact-me-container {
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    margin: 2rem;
+}
+

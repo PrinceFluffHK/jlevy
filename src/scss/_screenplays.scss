@@ -1,0 +1,28 @@
+@import "./variables";
+
+.feature-thumbnail {
+    object-fit: cover;
+    height: 216px;
+    width: 400px;
+}
+
+.feature-container {
+    padding: 1rem;
+    margin: 2rem;
+    background-color: $color-1;
+    width: 80%;
+    // border-bottom: 3px solid darkgray;
+}
+
+.youtube-embed {
+    border: 3px solid black;
+    filter: drop-shadow();
+}
+
+.feature-block {
+    // background-color: $color-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
