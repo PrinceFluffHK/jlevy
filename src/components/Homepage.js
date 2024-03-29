@@ -26,15 +26,15 @@ const Homepage = () => {
                                     style={{ height: "100%" }}
                                 >
                                     <img
-                                        className="headshot"
+                                        className="headshot block-outline"
                                         src={headshot}
                                         alt="Headshot of Jacob Levy smiling"
                                     />
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={6} className="center">
-                                <div id="bioAndLinks" className="width-90 ">
-                                    <div>
+                                <div id="bioAndLinks" className="center">
+                                    <div className="width-90">
                                         <p>
                                             <span
                                                 style={{
