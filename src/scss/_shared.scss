@@ -1,7 +1,7 @@
 @import "./variables";
 
 .app-background {
-    background-color: $color-1;
+    background-color: white;
 }
 
 .suppress-link {
@@ -85,13 +85,7 @@
     width: 100%;
 }
 
-.drop-shadow {
-    filter: drop-shadow(10px 10px 10px black);
-}
-
 .block-outline {
-    @extend .drop-shadow;
-    border: 3px solid black;
     border-radius: 1rem;
 }
 
