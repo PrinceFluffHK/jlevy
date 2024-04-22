@@ -10,8 +10,6 @@ const EmailForm = () => {
     const [undeliveredClass, setUndeliveredClass] = useState("invis");
     const [formClass, setFormClass] = useState("");
 
-    console.log(form.current)
-
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -19,11 +17,8 @@ const EmailForm = () => {
             .sendForm(
                 "service_xjsinbq",
                 "template_w6t8kb5",
-                // "service_6eickyn",
-                // "template_lzlrfz9",
                 form.current,
                 "1pOROJRpFCMlZUHYV"
-                // "Wr5DCHfNWTysQ9iLO"
             )
             .then(
                 (result) => {
@@ -44,8 +39,8 @@ const EmailForm = () => {
                 <div className="form-body">
                     <div className="">
                         <h1 className={formClass}>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            : jacoblevy95@gmail.com
+                            <FontAwesomeIcon icon={faEnvelope} />:
+                            jacoblevy95@gmail.com
                         </h1>
                     </div>
                     <form className="" ref={form} onSubmit={sendEmail}>

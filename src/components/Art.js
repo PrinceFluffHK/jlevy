@@ -14,7 +14,7 @@ const artList = [
     artwork.democracyBot,
 ];
 
-const Art = (props) => {
+const Art = () => {
     const artPanes = artList.map((art, index) => {
         return art.displayPane(index);
     });

@@ -34,7 +34,8 @@ const Screenplays = (props) => {
 
     return (
         <div className="ninety-container top-bar-margin">
-            <div className="narrow-container feature-block">{featurePanes}</div>;
+            <div className="narrow-container feature-block">{featurePanes}</div>
+            ;
         </div>
     );
 };

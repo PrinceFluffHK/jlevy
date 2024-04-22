@@ -79,7 +79,10 @@ const Homepage = () => {
                         <h1>Lets Connect!</h1>
                     </Link>
                 </div>
-                <div className="ninety-container" style={{ margin: "2rem 0 2rem 0"}}>
+                <div
+                    className="ninety-container"
+                    style={{ margin: "2rem 0 2rem 0" }}
+                >
                     <div className="width-90 center">
                         <Grid container rowSpacing={6}>
                             {pageGrid}
