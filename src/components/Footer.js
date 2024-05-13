@@ -12,7 +12,8 @@ const Footer = (props) => {
                 src={logoText}
                 alt='Stylized logo of "Jacob Levy"'
             />
-            <footer>
+            <footer className="center" style={{ flexDirection: "column"}}>
+                <p>jacoblevy95@gmail.com</p>
                 <small>Copyright © 2024 Jacob Levy. All rights reserved.</small>
             </footer>
         </div>
