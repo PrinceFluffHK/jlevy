@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Grid } from "@mui/material";
 
 const EmailForm = () => {
@@ -37,12 +37,12 @@ const EmailForm = () => {
         <Grid className="center" item xs={12} md={6}>
             <div className="width-90 form-container">
                 <div className="form-body">
-                    <div className="">
+                    {/* <div className="">
                         <h1 className={formClass}>
                             <FontAwesomeIcon icon={faEnvelope} />:
                             jacoblevy95@gmail.com
                         </h1>
-                    </div>
+                    </div> */}
                     <form className="" ref={form} onSubmit={sendEmail}>
                         <div className={formClass}>
                             <div className="">

@@ -2,11 +2,11 @@ import React from "react";
 import {
     almostMusicPilot,
     amnesiaDMinor,
-    copyPasteFeature,
+    // copyPasteFeature,
     criminalEtiquetteFeature,
     gotFinalSeason,
     invasionPilot,
-    notOfThisWorldFeature,
+    // notOfThisWorldFeature,
     premiumLubricantsShort,
     siliconValleySpec,
     strangerThingsSpec,
@@ -16,9 +16,9 @@ import {
 const Screenplays = (props) => {
     const featureList = [
         uncontactedFeature,
-        copyPasteFeature,
+        // copyPasteFeature,
         criminalEtiquetteFeature,
-        notOfThisWorldFeature,
+        // notOfThisWorldFeature,
         almostMusicPilot,
         invasionPilot,
         gotFinalSeason,

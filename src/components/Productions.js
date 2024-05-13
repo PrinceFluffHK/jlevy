@@ -14,7 +14,6 @@ const MyProductions = () => {
             <div className="narrow-container feature-block">
                 {productionPanes}
             </div>
-            ;
         </div>
     );
 };

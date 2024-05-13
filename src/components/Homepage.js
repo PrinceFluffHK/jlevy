@@ -34,7 +34,8 @@ const Homepage = () => {
                             </Grid>
                             <Grid item xs={12} md={6} className="center">
                                 <div id="bioAndLinks" className="center">
-                                    <div className="width-90">
+                                    <div className="width-90" 
+                                    style={{ height: "100%" }}>
                                         <p>
                                             <span
                                                 style={{

@@ -1,7 +1,11 @@
 import Feature from "../models/Feature";
 
-import island from "../images/island.jpg";
-// import masks from "../images/";
+//podcast links for uncontactetd
+// X email on mobile
+//hyperlink game of thrones
+// Z email page headshot mobile
+// X desktop homepage headshot bigger
+// X remove 2 screenplays
 
 export const uncontactedFeature = new Feature(
     "Uncontacted",

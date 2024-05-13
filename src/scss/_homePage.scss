@@ -1,11 +1,15 @@
 @import "./variables";
 
 .headshot {
-    width: 300px;
-    height: 300px;
+    $headshot-size: 360px;
+    width: 90%;
+    height: $headshot-size;
     object-fit: cover;
     object-position: 0px 2%;
     border-radius: 1.5rem;
+    @media only screen and (max-width: $md) {
+        width: 100%;
+    }
 }
 
 .grid-image {
@@ -43,7 +47,6 @@
 .homepage-grid-container {
     margin-bottom: 2rem;
     background-color: $color-2;
-    // border: 3px solid black;
     border-radius: 1.5rem;
     filter: drop-shadow(1rem 1rem 1rem);
     @media only screen and (max-width: $xl) {
